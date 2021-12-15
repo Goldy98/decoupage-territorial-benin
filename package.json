@@ -1,6 +1,6 @@
 {
   "name": "decoupage-territorial-benin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Decoupage territorial du Bénin",
   "main": "dist/index.js",
   "scripts": {
@@ -19,6 +19,13 @@
   ],
   "author": "SAGBO Aimé",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Goldy98/decoupage-territorial-benin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Goldy98/decoupage-territorial-benin/issues"
+  },
   "dependencies": {
     "@types/node": "^16.11.13",
     "typescript": "^4.5.4"
