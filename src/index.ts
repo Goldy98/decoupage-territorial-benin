@@ -25,7 +25,7 @@ export interface Quartier {
   labelQuart: string;
 }
 
-export function allBeninDepartments(): Department[] {
+export function getAllBeninDepartments(): Department[] {
   if (!alreadyParsedData)
     alreadyParsedData = dataFileContent.map(
       (rawDepartment: any): Department => {
