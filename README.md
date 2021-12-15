@@ -1,6 +1,45 @@
 # decoupage-territorial-benin
 
-[Package Node.js](https://bj-decoupage-territorial.herokuapp.com/) (non officielle) pour obtenir des informations de base sur les départements, communes, arrondissements et les quartiers du Bénin. Elle s'inspire du fichier du découpage territorial du Bénin proposé par [leplutonien](https://github.com/leplutonien/decoupage_territorial_benin).
+[Module Node.js](https://www.npmjs.com/package/decoupage-territorial-benin) (non officielle) pour obtenir des informations de base sur les départements, communes, arrondissements et les quartiers du Bénin. Elle utilise le fichier du découpage territorial du Bénin proposé par [leplutonien](https://github.com/leplutonien/decoupage_territorial_benin).
+
+# Installation
+
+```bash
+$ npm install decoupage-territorial-benin
+```
+
+# Utilisation
+
+```js
+const allDepartments = getAllBeninDepartments();
+```
+
+# Typage
+
+```ts
+interface Department {
+  idDep: number;
+  labelDep: string;
+  communes: Commune[];
+}
+
+interface Commune {
+  idCom: number;
+  labelCom: string;
+  arrondissements: Arrondissement[];
+}
+
+interface Arrondissement {
+  idArrond: number;
+  labelArrond: string;
+  quartiers: Quartier[];
+}
+
+interface Quartier {
+  idQuart: number;
+  labelQuart: string;
+}
+```
 
 # Stack Technique
 
