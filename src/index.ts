@@ -42,7 +42,7 @@ export function getAllBeninDepartments(): Department[] {
   return alreadyParsedData;
 }
 
-function getCommuneFromRawData(rawData: {
+export function getCommuneFromRawData(rawData: {
   id_com: number;
   lib_com: string;
   arrondissements: any[];
@@ -56,7 +56,7 @@ function getCommuneFromRawData(rawData: {
   };
 }
 
-function getArrondissementFromRawData(rawData: {
+export function getArrondissementFromRawData(rawData: {
   id_arrond: number;
   lib_arrond: string;
   quartiers: any[];
