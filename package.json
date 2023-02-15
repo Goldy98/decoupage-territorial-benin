@@ -1,6 +1,6 @@
 {
   "name": "decoupage-territorial-benin",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Decoupage territorial du Bénin",
   "main": "dist/index.js",
   "scripts": {
